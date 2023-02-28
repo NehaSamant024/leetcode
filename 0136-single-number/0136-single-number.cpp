@@ -9,3 +9,4 @@ public:
         return ans;
     }
 };
+//The result of XOR is 1 if the two bits are different. 
