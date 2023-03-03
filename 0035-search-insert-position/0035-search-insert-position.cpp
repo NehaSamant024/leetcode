@@ -15,6 +15,6 @@ public:
             
             
         }
-        return low;
+        return low;//if not found then at the end we have to return low . ideal place after which we should keep it into our array
     }
 };
