@@ -13,3 +13,5 @@ public:
             reverse(matrix[i].begin(),matrix[i].end());
     }
 };
+// tc=o(n^2);
+//sc=o(1);
