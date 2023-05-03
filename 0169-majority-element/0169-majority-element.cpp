@@ -10,13 +10,14 @@ public:
             {
                 max=nums[i];
             }
-                          //  count++;
+        }              //  count++;
 
-https://leetcode.com/problems/majority-element/solution/        }
+//https://leetcode.com/problems/majority-element/solution/        }
         return max;
     }
 };
 */
+
 class Solution {
 public:
     int majorityElement(vector<int>& nums) {
