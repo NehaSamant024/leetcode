@@ -6,19 +6,19 @@ public:
             return 0;
         set<char> st;
         int maxsize=0;
-        int i=0,j=0;
-        while(j<n)
+        int start=0,end=0;
+        while(start<n)
         {
-            if(st.count(s[j])==0)
+            if(st.count(s[start])==0)
             {
-                st.insert(s[j]);
+                st.insert(s[start]);
                 maxsize=max(maxsize,(int)st.size());
-                j++;
+                start++;
             }
             else
             {
-                st.erase(s[i]);
-                i++;
+                st.erase(s[end]);
+                end++;
             }
         }
         return maxsize;
