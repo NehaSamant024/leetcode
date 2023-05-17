@@ -1,7 +1,7 @@
 class Solution {
 public:
     double findMedianSortedArrays(vector<int>& nums1, vector<int>& nums2) {
-       // Initialization some neccessary variables
+      
         vector<int>v;
         
         // store the array in the new array
@@ -17,6 +17,7 @@ public:
         // Find the median and Return it
         int n=v.size();  // O(n)
         
-        return n%2?v[n/2]:(v[n/2-1]+v[n/2])/2.0;
+       // return n%2?v[n/2]:(v[n/2-1]+v[n/2])/2.0;
+        return n%2?v[n/2]:(v[(n-1)/2]+v[(n+1)/2])/2.0;
     }
 };
